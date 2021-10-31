@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+
 img {
   width: 100%;
 }
@@ -9,11 +11,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-}
-li {
-  list-style: none;
-  display: inline;
-  padding: 0 15px;
+  font-family: "Poppins", sans-serif;
 }
 a {
   text-decoration: none;
@@ -27,43 +25,41 @@ a {
   padding: 20px 0;
 }
 
-header {
-  position: sticky;
-  z-index: 100;
-}
-nav {
-  position: sticky;
-}
 main {
   background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   backdrop-filter: blur(11.5px);
   -webkit-backdrop-filter: blur(11.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 768px) {
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 150px;
-    margin-right: 150px;
-  }
 }
 
 @media screen and (max-width: 768px) {
-  header {
-    margin-top: 15px;
-  }
   .prueba {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     margin-bottom: 3rem;
   }
 
   .imagen {
     margin-top: 2rem;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  main {
+    box-shadow: none;
+    background: none;
+    margin-top: 15px;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-radius: none;
+    border: none;
   }
 }
 
@@ -72,9 +68,9 @@ main {
   margin-top: 2rem;
 }
 
-.prueba {
+/* .prueba {
   padding: 0px 60px 0px 0px;
-}
+} */
 
 .iconos-nosotros {
   margin-top: 20px;
@@ -148,4 +144,174 @@ main {
     width: 100%;
     height: 100%;
   }
+
+  .swiper img {
+    width: 350px;
+  }
+}
+
+.nosotros {
+  background-color: #b3e0ff;
+}
+
+.sobrenosotros {
+  margin-top: 40px;
+}
+
+.fondo {
+  background-color: #b3e0ff;
+}
+
+.sobrenosotros h3 {
+  font-weight: bold;
+  font-size: 35px;
+  color: white;
+}
+
+.fondo__nosotros {
+  padding: 3px 0;
+  padding-bottom: 50px;
+  margin-top: 40px;
+}
+
+.h3 h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.sobrenosotros p {
+  font-size: 20px;
+  padding: 0 20px;
+  color: gray;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: gray;
+}
+
+.prueba p {
+  padding-right: 80px;
+  font-size: 20px;
+  color: #848688;
+}
+
+.nosotros-p p {
+  font-size: 20px;
+  padding: 0;
+}
+
+.contacto {
+  margin-top: 16px;
+}
+
+.contacto h3 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+input {
+  /* display: block; */
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  margin: 6px 0;
+  width: 90%;
+  padding: 12px 15px;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 250px;
+}
+
+.contactanos {
+  margin-top: 20px;
+  padding: 15px 0;
+  color: white;
+  width: 40%;
+  background-color: gray;
+  opacity: 0.5;
+  border-radius: 9px;
+}
+
+.boton {
+  display: flex;
+  justify-content: start;
+  margin-left: 25px;
+  border: none;
+  padding: 14px 45px;
+  background-color: #284b63;
+  color: white;
+  transition: all 0.2s ease-out;
+  position: relative;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+  /* background-color: darken(#284b63, 15%); */
+}
+
+button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: blue;
+  transition: all 0.35s;
+  border: none;
+}
+
+button:hover {
+  color: #fff;
+}
+
+.boton:hover:after {
+  width: 100%;
+}
+
+.typing-demo {
+  width: 12ch;
+  animation: typing 1s steps(15), blink 0.3s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 3.4rem;
+}
+
+.typing-demo h3 {
+  font-size: 50px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.contactanos {
+  margin-top: 20px;
 }
