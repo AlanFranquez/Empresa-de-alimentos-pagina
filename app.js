@@ -32,8 +32,18 @@ closeMenuBtn.addEventListener('click', toggleMenu);
 
 // Scrollrevel
 
-ScrollReveal().reveal('.sobrenosotros');
-ScrollReveal().reveal('main');
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 500,
+  delay: 200,
+  // reset:true
+})
+
+sr.reveal(`main`)
+sr.reveal(`.contactanos`)
+sr.reveal(`.nosotros__img`, {origin: 'right'})
+sr.reveal(`.nosotros-p`, {origin: 'left'})
 
 
 // Validación del formulario
